@@ -1,0 +1,72 @@
+.enterCode{
+    width: 100%;
+    height: 100%;
+}
+.codeContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 0px;
+    margin: 60px auto;
+    width: max(30vw , 400px);
+}
+.enterCode form{
+    border: 1px solid var(--light-main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+.enterCode h4{
+    font-size: 26px;
+    font-weight: 700;
+}
+.enterCode .text{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.enterCode .code{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    position: relative;
+}
+.enterCode .code input{
+    width: 83px;
+    height: 100px;
+    line-height: 83px;
+    border-radius: 5px;
+    padding-left: 35px ;
+    font-size: 30px;
+    font-weight: 700px;
+}
+.enterCode .code input::placeholder{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+.enterCode .submit {
+    margin: 100px 0 30px;
+    width: 100%;
+    background: var(--main-color);
+    padding: 10px;
+    color: var(--white-color);
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.enterCode .code p{
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    cursor: pointer;
+    color: var(--light-blue-color) ;
+}

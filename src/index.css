@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Outfit:wght@100..900&display=swap');
+
+
+/* Global Style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Almarai", sans-serif;
+    height: 5000px;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+.app{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Variable */
+:root{
+    --main-color:#6918B4;
+    --dark-main-color: #36117E;
+    --light-main-color: #DBC8FF;
+    --white-color:#FFFFFF;
+    --main-yellow-color :#FF9900;
+    --light-yellow-color:#b36b006d;
+    --mid-main-color:#B691FF;
+    --main-blue-color:#3728B4;
+    --dark-blue-color: #271C7E;
+    --light-blue-color: #185FB4;
+
+}

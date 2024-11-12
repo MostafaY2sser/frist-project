@@ -1,0 +1,127 @@
+.wislList{
+    width: 100%;
+    height: 100%;
+}
+.wislListContainer{
+    max-width: 1440px;
+    margin: 0 auto ;
+    padding: 0 20px ;
+    margin-top: 50px;
+}
+.wislListContainer .title{
+    width: 250px;
+    margin: 0 auto;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    position: relative;
+}
+.wislListContainer .title h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.wislListContainer .title img{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -33%;
+    left: 0;
+    transform: rotate(-15deg);
+} 
+.wislList .products{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.wislList .box{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 264px;
+    margin-top: 20px;
+    position: relative;
+}
+.wislList .box .productImg{
+    width: 100%;
+}
+.wislList .details{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.wislList .info{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+.wislList .info span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.wislList .rating{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.wislList .rate{
+    color: #ABA9A9;
+    font-size: 16px;
+    font-weight: 400;
+}
+.wislList .price{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.wislList .productPrice{
+    color: var(--main-yellow-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+.wislList .discount{
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #ABA9A9;
+}
+.wislList .addToCart{
+    width: 100%;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 7px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.wislList .addToCart img{
+    width: 24px;
+    height: 24px;
+}
+.wislList .removeItem{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 25px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+
+

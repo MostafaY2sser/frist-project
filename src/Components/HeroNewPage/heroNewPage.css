@@ -1,0 +1,69 @@
+
+.hero{
+    height:350px;
+    border-radius: 10px;
+    background: linear-gradient(to right , #3333335a , #eeeeeee5);
+    position: relative;
+}
+.hero .images{
+    display: flex;
+    align-items: end;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+.hero .images img:nth-child(2),
+.hero .images img:nth-child(3){
+    margin-left: -50px;
+}
+.hero .here{
+    position: absolute;
+    right: 10%;
+    top: -20px;
+}
+.hero .newimg{
+    position: absolute;
+    top: -27px;
+    left: -27px;
+}
+.hero .text{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    right: 12%;
+    top: 30%;
+    transform: rotate(-15deg);
+} 
+.hero .hereHere{
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    right: 27%;
+    top: 32%;
+    transform: rotate(-15deg);
+} 
+.hero .newText{
+    font-size: 96px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    bottom:26%;
+    left: 37%;
+}
+.newTextSmallLeft,
+.newTextSmallRight{
+    position: absolute;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+.newTextSmallLeft{
+    left: 29%;
+    bottom: 42%;
+}
+.newTextSmallRight{
+    left: 53%;
+    bottom: 18%;
+}

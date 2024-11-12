@@ -1,0 +1,55 @@
+
+.heroMoreFamous{
+    background-color: #CF61618C;
+    border-radius: 10px;
+    height: 320px;
+    position: relative;
+}
+.heroMoreFamous .bg{
+    background-color: white;
+    width: 400px;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    transform : skewX(-20deg);
+}
+.heroMoreFamous .man{
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+.heroMoreFamous .text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 150px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+} 
+.heroMoreFamous .title{
+    border: 2px solid  #A00000;
+    background-color: white;
+    color: #A00000;
+    font-size: 25px;
+    font-weight: 700;
+    width: 200px;
+    padding: 24px 30px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+.heroMoreFamous .title img{
+    position: absolute;
+    bottom: 0px;
+    left: -3px;
+    padding: 6px;
+    border-radius: 20%;
+}
+.heroMoreFamous p{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}

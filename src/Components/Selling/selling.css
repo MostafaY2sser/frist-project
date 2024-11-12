@@ -1,0 +1,41 @@
+.selling{
+    margin-top: 70px;
+    width: 100%;
+    background-image: linear-gradient(to right, #3333339e, #eeeeee68), url(/public/bg.png);
+    padding: 30px 20px 0 ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.selling .images{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.selling .images .group{
+    display: flex;
+    flex-direction: column;
+}
+.selling .images .group .text{
+    background-image: url(/public/bgSmall.png);
+    width: 100%;
+    padding: 7px 30px;
+    padding-left: 70px;
+    text-align: center;
+    font-size: 28px;
+}
+.selling .images .center{
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    transform: translateX(-50%);
+}
+.selling .images .top{
+    background-image: url(/public/bgPercentg.png);
+    padding: 5px 30px;
+}
+.selling .images .bottom{
+    top: 55%;
+}

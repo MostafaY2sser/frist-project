@@ -1,0 +1,108 @@
+
+.moreFamousPage {
+    width: 100%;
+    height :100%;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.moreContainer{
+    max-width :1440px;
+    margin : 0 auto
+}
+.moreFamousPage  .products{
+    margin-top: 70px;
+}
+.moreFamousPage  .products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.moreFamousPage  .products .item{
+    width: 19%;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.moreFamousPage  .products .item .productImage{
+    width: 100%;
+}
+.moreFamousPage  .products .item .info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.moreFamousPage  .products .item .info span{
+    font-size: 18px;
+    font-weight: 700;
+}
+.moreFamousPage  .products .item .info span:first-child{
+    color: var(--main-yellow-color) ;
+}
+
+.moreFamousPage  .products .item .rating{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.moreFamousPage  .products .item .rating .rate{
+    color: #333333ba;
+}
+.moreFamousPage  .products .item .addCart{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.moreFamousPage  .products .item .addCart img{
+    width: 22px;
+    height: 22px;
+}
+.moreFamousPage  .products .item .newOk{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background-color: #11D200;
+    color: var(--white-color);
+    padding: 7px 15px;
+    border-radius: 5px ;
+    font-size: 20px;
+}
+.moreFamousPage  .products .item .sallOk{
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    background-color: var(--main-yellow-color);
+    color: var(--white-color);
+    padding: 7px 20px;
+    border-radius: 5px ;
+    font-size: 20px;
+}
+.moreFamousPage  .products .item  .iconHeart{
+    position: absolute;
+    top: 30px;
+    right: 30px ;
+    font-size: 25px;
+    cursor: pointer;
+}
+.moreFamousPage  .products .item .likeOk{
+    color: var(--main-yellow-color);
+}
+.moreFamousPage  .products .item .likeNo{
+    color: transparent;
+}

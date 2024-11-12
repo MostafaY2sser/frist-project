@@ -1,0 +1,142 @@
+
+
+/* Top Header  */
+.topHeader{
+    width: 100%;
+    background-color: var(--main-color);
+    height: 44px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.left,
+.right{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.left span,
+.right span{
+    color: white;
+}
+.leftIcon{
+    color: white;
+}
+
+
+
+/* Mid Header */
+.midHeader{
+    margin: 10px 0;
+}
+.midContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.midHeader .icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.midHeader .icons img{
+    width: 40px;
+    cursor: pointer;
+}
+.search{
+    height: 44px;
+    display: flex;
+    align-items: center;
+    width: 470px;
+}
+.searchIcon{
+    height: 44px;
+    width: 44px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+}
+.search input{
+    height: 44px;
+    border: none;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 2px;
+    width: 60%;
+}
+.search input::placeholder{
+    font-size: 14px;
+    text-align: end;
+    padding-right: 10px;
+}
+.midDropDown{
+    background-color: #cccccc53;
+    height: 44px;
+    width: 96px;
+}
+.midHeader .links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+}
+.midHeader .links .link{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.logo img{
+    width: 155px;
+    cursor: pointer;
+}
+
+
+/* Bottom Header */
+.bottomHeader{
+    width: 100%;
+    background-color: var(--light-yellow-color);
+}
+.bottomContainer{
+    max-width: 1440px;
+    height: 55px;
+    padding: 0 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+}
+.bottomContainer .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: .8;
+    color: #333;
+}
+.lastDropDown{
+    width: 134px;
+    background-color: var(--main-color);
+    height:55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottomContainer .links .link{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,55 @@
+
+.heroBSP{
+    background-color: #002DA080;
+    border-radius: 10px;
+    height: 320px;
+    position: relative;
+}
+.heroBSP .bg{
+    background-color: white;
+    width: 400px;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    transform : skewX(-20deg);
+}
+.heroBSP .man{
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+.heroBSP .text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 150px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+} 
+.heroBSP .title{
+    border: 2px solid var(--main-color);
+    background-color: white;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
+    width: 200px;
+    padding: 24px 30px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+.heroBSP .title img{
+    position: absolute;
+    bottom: -4px;
+    left: -4px;
+    padding: 6px;
+    border-radius: 20%;
+}
+.heroBSP p{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
