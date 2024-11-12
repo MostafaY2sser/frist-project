@@ -79,6 +79,7 @@ const MidHeader = () => {
                 </div>
                 <div className="links">
                     <Link to="/help" className="link">مساعدة</Link>
+                    <Link to="/About" className="link">من نحن</Link>
                     <Link to="/gmlaPage" className="link">بالجملة</Link>
                     <Link to="/newPage" className="link">الجديد</Link>
                     <Link to="/">الرئيسية</Link>

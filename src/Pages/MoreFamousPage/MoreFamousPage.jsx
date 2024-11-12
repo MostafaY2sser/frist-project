@@ -1,5 +1,6 @@
 import "./moreFamousPage.css"
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Rating } from "@mui/material";
 import newPageItem from "../../FackeAPI/ApiNewPage"
 import { useContext, useState } from "react";
@@ -40,9 +41,11 @@ const ProductItem = ({ item }) => {
         if (isLiked) {
             // Remove item From WishList
             removeFromWishlist(item.id);
+            toast.info(`${item.name} تم إزالته من المفضلة`);
         } else {
             // Add item to WishList
             addToWishlist(item);
+            toast.success(`${item.name} تم إضافته إلى المفضلة`);
         }
         setIsLiked((prevLiked) => !prevLiked);
     };

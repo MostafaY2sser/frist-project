@@ -1,4 +1,6 @@
 import "./siginUp.css"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 import { Link, useNavigate } from "react-router-dom"
 import facebook from "../../images/facebook.png"
 import google from "../../images/google.png"
@@ -13,6 +15,7 @@ const SiginUp = () => {
     const handleSubmit = (e) => {
         e.preventDefault(); 
         navigate("/"); 
+        toast.info(`${item.name} تم إزالته من المفضلة`);
     };
 
     return (

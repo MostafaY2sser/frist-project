@@ -42,3 +42,7 @@ ul{
     --light-blue-color: #185FB4;
 
 }
+
+.Toastify__toast-container {
+    z-index: 9999;
+}
