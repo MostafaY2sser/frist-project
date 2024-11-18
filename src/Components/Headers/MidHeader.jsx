@@ -21,6 +21,10 @@ const MidHeader = () => {
     // Go To WishList Page
     const navigateShoppingCart = useNavigate()
 
+    // Go To profile Page
+    const navigateprofile = useNavigate()
+
+
 
     // Handel Category  
     const [ category , setCategory ] = useState('');
@@ -33,7 +37,7 @@ const MidHeader = () => {
         <div className="midHeader">
             <div className="midContainer">
                 <div className="icons">
-                    <img src={user} alt="" />
+                    <img onClick={()=> navigateprofile("profile")} src={user} alt="" />
                     <img onClick={()=> navigateShoppingCart("shoppingCart")} src={cart} alt="" />
                     <img onClick={()=> navigateWishList("wishList")} src={likes} alt="" />
                 </div>

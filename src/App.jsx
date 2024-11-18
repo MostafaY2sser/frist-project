@@ -21,6 +21,11 @@ import Help from './Pages/Help/Help';
 // import StoreProvider from './ContextAPI';
 import Wishlist from './Pages/Wishlist/Wishlist';
 import ShoppingCart from './Pages/ShoppingCart/ShoppingCart';
+import Profile from './Pages/Profile/Profile';
+import Talapaty from './Components/Talapaty/Talapaty';
+import Addresses from './Components/Addresses/Addresses';
+import Massage from './Components/Massage/Massage';
+import ProfileInfo from './Pages/ProfileInfo/ProfileInfo';
 
 function App() {
 
@@ -48,6 +53,11 @@ function App() {
             <Route path='/help' element={<Help/>}/>
             <Route path='/wishList' element={<Wishlist/>}/>
             <Route path='/shoppingCart' element={<ShoppingCart/>}/>
+            <Route path='/profile' element={<Profile/>}/>
+            <Route path='/talapaty' element={<Talapaty/>}/>
+            <Route path='/addresses' element={<Addresses/>}/>
+            <Route path='/massage' element={<Massage/>}/>
+            <Route path='/profileInfo' element={<ProfileInfo/>}/>
           </Routes>
         </BrowserRouter>
     </div>
