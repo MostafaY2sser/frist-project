@@ -1,0 +1,185 @@
+.Addresses {
+    width: 100%;
+    height :100%;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.AddressesPage{
+    max-width :1440px;
+    margin : 0 auto
+}
+.AddressesPage img{
+    max-width: 220px;
+    margin: 5px 20px;
+}
+
+
+/* address-container */
+
+.address-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+  
+  .address-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    direction: rtl; 
+  }
+  
+  .address-info {
+    font-size: 14px;
+    color: #333;
+    flex: 1;
+  }
+  
+  .address-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+  }
+  
+  .edit-btn {
+    color: #0000ff;
+  }
+  
+  .delete-btn {
+    color: #ff0000;
+  }
+  
+  .add-new-address {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .add-address-link {
+    color: #0000ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .add-address-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media (max-width: 600px) {
+    .address-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .address-actions {
+      margin-top: 10px;
+    }
+  }
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    direction: rtl; 
+  }
+  
+  .modal-title {
+    text-align: center;
+  }
+  
+  .address-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .address-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .add-address-link{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .add-address-button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+    list-style: none;
+  }
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,3 @@
-
 import "./shoppingCart.css"
 import shoppingCartImg from "../../images/cart.png"
 import { useContext, useState } from "react"
