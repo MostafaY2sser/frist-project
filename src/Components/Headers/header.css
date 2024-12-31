@@ -4,7 +4,6 @@
 .topHeader{
     width: 100%;
     background-color: var(--main-color);
-    height: 44px;
 }
 .container{
     display: flex;

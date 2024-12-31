@@ -8,8 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Almarai", sans-serif;
-    height: 5000px;
+    font-family: "Almarai", sans-serif !important;
 }
 html{
     scroll-behavior: smooth;

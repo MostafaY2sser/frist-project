@@ -85,12 +85,12 @@ const TopHeader = () => {
                     }}
                     >
                     <MenuItem value="">
-                        <em>القاهرة,مصر</em>
+                        القاهرة,مصر
                     </MenuItem>
                     <MenuItem value={20}>الرياض,السعودية</MenuItem>
                     </Select>
                 </FormControl>
-                <span>: التوصيل</span>
+                <span style={{fontSize: 20}}>: التوصيل</span>
             </div>
             </div>
         </div>

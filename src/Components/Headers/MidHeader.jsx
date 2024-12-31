@@ -4,7 +4,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import user from "../../images/user.png"
 import cart from "../../images/cart.png"
 import likes from "../../images/likes.png"
-import logo from "../../images/logo.SVG"
+import logo from "../../images/logo.svg"
 import { FormControl, MenuItem, Select } from "@mui/material";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
