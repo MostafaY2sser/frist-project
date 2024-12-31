@@ -1,0 +1,10 @@
+
+.categoryPage{
+    width: 100%;
+    height: 100%;
+}
+.categoryPageContainer{
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}

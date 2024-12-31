@@ -82,6 +82,8 @@
     background-color: #eee;
     border: none;
     border-radius: 10px;
+    padding: 10px;
+    font-size : 18px;
 }
 .help .contactMessage button{
     background-color: var(--main-color);

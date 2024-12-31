@@ -24,3 +24,191 @@
     width: 32px;
     height: 32px;
 }
+.shoppingCart .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+.shoppingCart .head .deleteAll{
+    flex: 2;
+    text-align: end;
+    color: #4DBFFF;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.shoppingCart .head .decsription{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ---------------------------------------------------------------- */
+.shoppingCart .box{
+    display: flex;
+    flex-direction: column;
+}
+.shoppingCart .product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 ;
+    border-bottom: 1px solid #ccc;
+}
+.shoppingCart .cost{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shoppingCart .cost p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.shoppingCart .cost .quantity{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.shoppingCart .cost .quantity button{
+    outline: none;
+    border: 1px solid #ABA9A9;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.shoppingCart .cost .quantity button:first-child{
+    background-color: white;
+    color: #ABA9A9;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.shoppingCart .cost .quantity button:last-child{
+    background-color: #FFB95D;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.shoppingCart .cost .quantity span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 30px;
+    height: 30px;
+    border-top: 1px solid #ABA9A9;
+    border-bottom: 1px solid #ABA9A9;
+}
+
+
+/* ------------------------------------------------------- */
+.shoppingCart .details{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.shoppingCart .details .info{
+    display: flex;
+    flex-direction: column;
+}
+.shoppingCart .details .info .name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.shoppingCart .details .info .name p{
+    color:#9C9A9A;
+    font-size: 14px;
+    font-weight: 400;
+}
+.shoppingCart .details .info .name span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.shoppingCart .details .info .description{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9C9A9A;
+}
+.shoppingCart .details .info .description .size{
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+}
+.shoppingCart .details .info .description .color{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.shoppingCart img{
+    width: 50px;
+    height: 50px;
+}
+.shoppingCart .deletProduct{
+    width: 22px;
+    height: 25px;
+    cursor: pointer;
+}
+.shoppingCart .totalPrice{
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.shoppingCart .lastSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0 ;
+    gap: 10px;
+}
+.shoppingCart .lastSection h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+.shoppingCart .lastSectionp p {
+    color: #5E5E5E;
+    font-size: 20px;
+    font-weight: 400;
+}
+.shoppingCart .lastSection p span{
+    font-weight: 700;
+    font-size: 23px;
+    color: var(--main-color);
+}
+.shoppingCart .lastSection div {
+    color: #5E5E5E;
+    font-size: 23px;
+    font-weight: 400;
+}
+.shoppingCart .lastSection div span{
+    color: var(--main-yellow-color);
+    font-size: 26px;
+    font-weight: 600;
+}
+.shoppingCart .lastSection .continues{
+    background: linear-gradient(to right , #6918B4 3.65%, #954ADA 52.1%, #BF79FF 99.55%);
+    width: 200px;
+    padding: 10px 0 ;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+

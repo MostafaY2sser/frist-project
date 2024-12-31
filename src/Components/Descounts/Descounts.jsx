@@ -40,7 +40,7 @@ const Descounts = () => {
 
 const ProductItem = ({ item }) => {
 
-    const { removeFromWishlist , addToWishlist } = useContext(Store)
+    const { removeFromWishlist , addToWishlist , addToCart } = useContext(Store)
 
     // State Of Like 
     const [isLiked, setIsLiked] = useState(item.like);
@@ -71,7 +71,7 @@ const ProductItem = ({ item }) => {
                     <Rating name="read-only" value={item.rating} readOnly />
                 </div>
             </div>
-            <div className="addCart">
+            <div className="addCart" onClick={()=> addToCart(item)}>
                 <img src={cart} alt="shopping cart" />
                 <span>اضف الي العربة</span>
             </div>

@@ -9,7 +9,7 @@ import LikeOk from "../../images/likeOk.png"
 const Wishlist = () => {
 
 
-    const {  wishlistitem , removeFromWishlist } = useContext(Store);
+    const {  wishlistitem , removeFromWishlist , addToCart } = useContext(Store);
 
     return (
         <div className="wislList">
@@ -37,7 +37,7 @@ const Wishlist = () => {
                                     <span className="discount">19ج</span>
                                 </div>
                             </div>
-                            <div className="addToCart">
+                            <div className="addToCart" onClick={()=> addToCart(item)} >
                                 <img src={cart} alt="اضف الي العربة" />
                                 <span>اضف الي العربة</span>
                             </div>

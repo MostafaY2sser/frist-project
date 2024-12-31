@@ -3,6 +3,7 @@ import "./moreFamous.css"
 import famouse from "../../images/moreFamous.png";
 import more from "../../images/more.png";
 import moreFamouse from "../../FackeAPI/ApiMoreFamous"
+// import bestSelling from "../../FackeAPI/ApiBestSelling"
 import cart from "../../images/cart.png";
 import likeOk from "../../images/likeOk.png";
 import likeNo from "../../images/likeNo.png";
@@ -43,7 +44,7 @@ const MoreFamous = () => {
 const ProductItem = ({ item }) => {
 
 
-    const { removeFromWishlist , addToWishlist } = useContext(Store)
+    const { removeFromWishlist , addToWishlist , addToCart } = useContext(Store)
 
 
     // State Of Like 
@@ -73,7 +74,7 @@ const ProductItem = ({ item }) => {
                 <span className="rate">{`${item.rating}.0`}</span>
                 <Rating name="read-only" value={item.rating} readOnly />            
             </div>
-            <div className="addCart">
+            <div className="addCart" onClick={()=> addToCart(item)}>
                 <img src={cart} alt="shopping cart" />
                 <span>اضف الي العربة</span>
             </div>

@@ -1,15 +1,27 @@
 
 import "./shoppingCart.css"
 import shoppingCartImg from "../../images/cart.png"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { Store } from "../../ContextAPI"
+import deleteProduct from "../../images/delete.png";
+import { Link } from "react-router-dom";
+
 
 const ShoppingCart = () => {
 
 
-    const { cartItem , clearCart } = useContext(Store)
+    const { cartItem ,  removeFromCart , clearCart , addToCart , deleteFromCart , totalItems ,totalPrice } = useContext(Store)
 
-    const [ quantity , setQuantity ] = useState(1)
+
+    
+
+    //  Decrease Product and Remove if Product less than 0  
+    const decreaseQuantity = (item) => {
+        if (item.quantity > 1) {
+            removeFromCart(item.id);
+        }
+    };
+
 
     return (
         <div className="shoppingCart">
@@ -33,21 +45,40 @@ const ShoppingCart = () => {
                     {cartItem.map((item, index) => (
                         <div className="product" key={index}>
                             <div className="cost">
-                                <p className="price">{`${item.price}ج`}</p>
+                                <p className="allPrice">{`${item.price * item.quantity}ج`}</p>
                                 <div className="quantity">
-                                    <button onClick={()=> setQuantity(quantity - 1)}>-</button>
-                                    <span>{quantity}</span>
-                                    <button onClick={()=> setQuantity(quantity + 1)}>+</button>
+                                    <button onClick={()=> decreaseQuantity(item)}>-</button>
+                                    <span>{item.quantity}</span>
+                                    <button onClick={()=> addToCart(item)}>+</button>
                                 </div>
-                                <p className="allPrice">{item.price}</p>
+                                <p className="price">{`${item.price}ج`}</p>
                             </div>
-                            <div className="info">
-                                <img src={item.img} alt="" />
+                            <div className="details">
+                                <div className="info">
+                                    <div className="name">
+                                        <p>Mostfaa Mostfaa Mostfaa Mostfaa Mostfaa Mostfaa Mostfaa</p>
+                                        <span>{item.name}</span>
+                                    </div>
+                                    <div className="description">
+                                        <div> <span className="size">M</span> :المقاس</div>
+                                        <div> <span className="color" style={{background:"red"}}></span> :اللون</div>
+                                    </div>
+                                </div>
+                                <img src={item.img} alt="المنتج" />
+                                <img onClick={()=> deleteFromCart(item.id)} className="deletProduct" src={deleteProduct} alt="تحذف المنتج" />
                             </div>
                         </div>
                     ))}
                 </div>
 
+                <div className="totalPrice">{`${totalPrice}ج`}</div>
+
+                <div className="lastSection">
+                    <h4>تابع عملية الشراء</h4>
+                    <p>( عدد <span>{totalItems}</span> من القطع )</p>
+                    <div>الاجمالي : <span>{`${totalPrice}ج`}</span></div>
+                    <Link className="continues" to="/checkoutOne">استمرار</Link>
+                </div>
 
             </div>
         </div>

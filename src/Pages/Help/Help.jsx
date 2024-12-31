@@ -9,6 +9,7 @@ const Help = () => {
 
     const [active, setActive] = useState(null); 
 
+    // fucntion for handle Active Element
     const handleClick = (item) => {
         setActive(item); 
     }

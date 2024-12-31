@@ -98,6 +98,29 @@ const StoreProvider = ({ children }) => {
     };
 
 
+    // Function To Completely Delete Product From Shopping Cart
+    const deleteFromCart = (itemId) => {
+        setCartItem((prevCart) => {
+            const updatedCart = prevCart.filter(cartItem => cartItem.id !== itemId);
+            localStorage.setItem('cart', JSON.stringify(updatedCart));
+            return updatedCart;
+        });
+    };
+
+
+    // Calculate Total Price
+    const totalPrice = cartItem.reduce((acc, item) => acc + item.price * item.quantity, 0);
+
+
+    // Calculate Final Price 
+    const finalPrice = totalPrice + 80 ;
+
+
+    
+    // Calculate Total Products in Cart 
+    const totalItems = cartItem.reduce((acc, item) => acc + item.quantity, 0);
+
+
     // Function To Delete All Products From Shopping Cart 
     const clearCart = () => {
         setCartItem([]);
@@ -124,6 +147,10 @@ const StoreProvider = ({ children }) => {
             addToCart,
             removeFromCart,
             clearCart,
+            deleteFromCart,
+            totalPrice,
+            totalItems,
+            finalPrice,
         }}>
             {children} 
         </Store.Provider>
