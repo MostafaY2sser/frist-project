@@ -18,9 +18,12 @@ import MoreFamousPage from './Pages/MoreFamousPage/MoreFamousPage';
 import DescountsPage from './Pages/DescountsPage/DescountsPage';
 import NewPage from './Pages/NewPage/NewPage';
 import Help from './Pages/Help/Help';
-// import StoreProvider from './ContextAPI';
 import Wishlist from './Pages/Wishlist/Wishlist';
 import ShoppingCart from './Pages/ShoppingCart/ShoppingCart';
+import CheckoutOne from './Pages/checkoutOne/checkoutOne';
+import CheckoutTwo from './Pages/CheckoutTwo/CheckoutTwo';
+import Footer from './Components/Footer/Footer';
+import CategoryPage from './Pages/CategoryPage/CategoryPage';
 import Profile from './Pages/Profile/Profile';
 import Talapaty from './Components/Talapaty/Talapaty';
 import Addresses from './Components/Addresses/Addresses';
@@ -29,8 +32,8 @@ import ProfileInfo from './Pages/ProfileInfo/ProfileInfo';
 
 function App() {
 
+
   return (
-    // <StoreProvider>
     <div className='app'>
         <BrowserRouter>
           <TopHeader/>
@@ -53,15 +56,18 @@ function App() {
             <Route path='/help' element={<Help/>}/>
             <Route path='/wishList' element={<Wishlist/>}/>
             <Route path='/shoppingCart' element={<ShoppingCart/>}/>
+            <Route path='/checkoutOne' element={<CheckoutOne/>}/>
+            <Route path='/checkoutTwo' element={<CheckoutTwo/>}/>
+            <Route path='/...' element={<CategoryPage/>}/>
             <Route path='/profile' element={<Profile/>}/>
             <Route path='/talapaty' element={<Talapaty/>}/>
             <Route path='/addresses' element={<Addresses/>}/>
             <Route path='/massage' element={<Massage/>}/>
             <Route path='/profileInfo' element={<ProfileInfo/>}/>
           </Routes>
+          <Footer/>
         </BrowserRouter>
     </div>
-    // </StoreProvider>
   )
 }
 

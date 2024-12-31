@@ -111,7 +111,7 @@
 /* Bottom Header */
 .bottomHeader{
     width: 100%;
-    background-color: var(--light-yellow-color);
+    background-color: #FFF2E0;
 }
 .bottomContainer{
     max-width: 1440px;

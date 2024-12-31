@@ -1,0 +1,300 @@
+.checkoutOne{
+    width: 100%;
+    height: 100%;
+}
+.checkoutOneContainer{
+    max-width: 1440px;
+    margin: 0 auto ;
+    padding: 50px 20px ;
+}
+.checkoutOne .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.checkoutOne .title h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--main-color) ;
+}
+.checkoutOne .title div{
+    color: #5E5E5E;
+    font-size: 24px;
+    font-weight: 400;
+}
+.checkoutOne .title div span{
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+
+/* ---------------------------------------------------------------------- */
+.checkoutOne .shippingMethod{
+    text-align: end;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.checkoutOne .chooseMeth{
+    width: 70%;
+    margin-left: auto ;
+} 
+.checkoutOne .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: #E5E3E3;
+    padding: 20px 0 ;
+}
+.checkoutOne .head span{
+    width: 30%;
+    text-align: center; 
+    font-size: 22px;
+    font-weight: 400;
+}
+.checkoutOne .head span:first-child{
+    text-align: end;
+    margin-right: 40px;
+}
+.checkoutOne .methods .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 15px 0 ;
+    border: 1px solid #E5E3E3;
+}
+.selected {
+    background-color: #E1F4FF; 
+}
+
+.checkoutOne .methods .box .column{
+    width: 30%;
+    text-align: center; 
+}
+.checkoutOne .methods .box .one{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    margin-right: 20px;
+}
+.checkoutOne .methods .box .one p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.checkoutOne .methods .box .one input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.checkoutOne .methods .box .two{
+    font-size: 22px;
+    font-weight: 400;
+}
+.checkoutOne .methods .box .three{
+    font-size: 20px;
+    font-weight: 400;
+}
+.checkoutOne .LastBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 ;
+    border: 1px solid #E5E3E3;
+    background-color: #FDEACE;
+}
+.checkoutOne .LastBox .lastText{
+    flex: 1;
+    text-align: end;
+    font-weight: 400px;
+}
+.checkoutOne .LastBox .column{
+    flex: 1;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    margin-right: 20px;
+}
+.checkoutOne .LastBox .column input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.checkoutOne .LastBox .column p{
+    font-size: 20px;
+}
+.checkoutOne .LastBox .lastText{
+    font-size: 18px;
+}
+
+
+
+
+/* -------------------------------------------------------------------- */
+.addressName{
+    text-align: end;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 50px 0 20px;
+} 
+.checkoutOne .address {
+    width: 70%;
+    margin-left: auto ;
+    border: 1px solid #E5E3E3;
+}
+.checkoutOne .address .box{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    padding: 20px ;
+}
+.checkoutOne .address .box:not(:last-child){
+    border-bottom: 1px solid #E5E3E3;
+}
+.checkoutOne .address .box p{
+    font-size: 22px;
+    font-weight: 400;
+}
+.checkoutOne .address .box input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.checkoutOne .addAddress{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-color);
+    margin-top: 20px;
+    cursor: pointer;
+    padding-left: 30%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+.infoCost{
+    text-align: end;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 70px 0 20px;
+}
+.infoContainer{
+    border: 1px solid #A9A8AE;
+    width: 70%;
+    margin-left: auto;
+    text-align: end;
+    font-size: 20px;
+    font-weight: 400;
+    color: #5E5E5E;
+}
+.infoContainer .cost{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dotted #A9A8AE ;
+}
+.infoContainer .productCost,
+.infoContainer .shoppingCost,
+.infoContainer .discount,
+.infoContainer .total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.infoContainer .discountCode{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.infoContainer .cost{
+    padding: 15px 10px;
+    gap: 5px;
+}
+.infoContainer .discount{
+    padding: 15px 10px;
+}
+.infoContainer .total{
+    padding: 15px 10px;
+    border-top: 1px solid  #A9A8AE;
+}
+.infoContainer .cost .productCost .totalPrice{
+    color: #5E5E5E;
+    font-size: 24px;
+    font-weight: 700;
+}
+.infoContainer .discount .discountCode input{
+    width: 80px;
+    height: 30px;
+    border: 1px solid #A9A8AE;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 0 5px;
+}
+.infoContainer .discount .discountCode span{
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: #1DA1F2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.infoContainer .total .text{
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+}
+.infoContainer .total .price{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--main-yellow-color);
+}
+.checkoutOne .continues{
+    background: linear-gradient(to right , #6918B4 3.65%, #954ADA 52.1%, #BF79FF 99.55%);
+    width: 200px;
+    padding: 10px 0 ;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: auto ;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.checkoutOne .continues .link{
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

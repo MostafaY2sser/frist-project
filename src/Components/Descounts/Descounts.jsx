@@ -37,7 +37,8 @@ const Descounts = () => {
 };
 
 const ProductItem = ({ item }) => {
-  const { removeFromWishlist, addToWishlist } = useContext(Store);
+
+    const { removeFromWishlist , addToWishlist , addToCart } = useContext(Store)
 
   // State Of Like
   const [isLiked, setIsLiked] = useState(item.like);
@@ -56,33 +57,33 @@ const ProductItem = ({ item }) => {
     setIsLiked((prevLiked) => !prevLiked);
   };
 
-  return (
-    <div className="item">
-      <img className="productImage" src={item.img} alt="product image" />
-      <div className="info">
-        <span>{`${item.price} ج`}</span>
-        <span>{item.name}</span>
-      </div>
-      <div className="rating">
-        <div className="preiceDesciunts">{`${item.descount} ج`}</div>
-        <div className="stars">
-          <span className="rate">{`${item.rating}.0`}</span>
-          <Rating name="read-only" value={item.rating} readOnly />
+    return (
+        <div className="item">
+            <img className="productImage" src={item.img} alt="product image" />
+            <div className="info">
+                <span>{`${item.price} ج`}</span>
+                <span>{item.name}</span>
+            </div>
+            <div className="rating">
+                <div className="preiceDesciunts">{`${item.descount} ج`}</div>
+                <div className="stars">
+                    <span className="rate">{`${item.rating}.0`}</span>
+                    <Rating name="read-only" value={item.rating} readOnly />
+                </div>
+            </div>
+            <div className="addCart" onClick={()=> addToCart(item)}>
+                <img src={cart} alt="shopping cart" />
+                <span>اضف الي العربة</span>
+            </div>
+            {item.sall ? <span className="sallOk">20% تخفيض</span> : null } 
+            <img
+                className="iconHeart"
+                src={isLiked ? likeOk : likeNo}
+                alt={isLiked ? "like" : "dislike"}
+                onClick={toggleLike} 
+            />
         </div>
-      </div>
-      <div className="addCart">
-        <img src={cart} alt="shopping cart" />
-        <span>اضف الي العربة</span>
-      </div>
-      {item.sall ? <span className="sallOk">20% تخفيض</span> : null}
-      <img
-        className="iconHeart"
-        src={isLiked ? likeOk : likeNo}
-        alt={isLiked ? "like" : "dislike"}
-        onClick={toggleLike}
-      />
-    </div>
-  );
+    );
 };
 
 // To Delete Wrong :------------
