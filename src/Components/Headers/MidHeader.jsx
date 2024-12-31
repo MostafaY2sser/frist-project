@@ -4,7 +4,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import user from "../../images/user.png"
 import cart from "../../images/cart.png"
 import likes from "../../images/likes.png"
-import logo from "../../images/logo.SVG"
+import logo from "../../images/logo.svg"
 import { FormControl, MenuItem, Select } from "@mui/material";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -21,6 +21,10 @@ const MidHeader = () => {
     // Go To WishList Page
     const navigateShoppingCart = useNavigate()
 
+    // Go To profile Page
+    const navigateprofile = useNavigate()
+
+
 
     // Handel Category  
     const [ category , setCategory ] = useState('');
@@ -33,7 +37,7 @@ const MidHeader = () => {
         <div className="midHeader">
             <div className="midContainer">
                 <div className="icons">
-                    <img src={user} alt="" />
+                    <img onClick={()=> navigateprofile("profile")} src={user} alt="" />
                     <img onClick={()=> navigateShoppingCart("shoppingCart")} src={cart} alt="" />
                     <img onClick={()=> navigateWishList("wishList")} src={likes} alt="" />
                 </div>
@@ -79,6 +83,7 @@ const MidHeader = () => {
                 </div>
                 <div className="links">
                     <Link to="/help" className="link">مساعدة</Link>
+                    <Link to="/About" className="link">من نحن</Link>
                     <Link to="/gmlaPage" className="link">بالجملة</Link>
                     <Link to="/newPage" className="link">الجديد</Link>
                     <Link to="/">الرئيسية</Link>

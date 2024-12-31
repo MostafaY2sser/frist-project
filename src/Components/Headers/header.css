@@ -4,8 +4,12 @@
 .topHeader{
     width: 100%;
     background-color: var(--main-color);
-    height: 44px;
 }
+
+.topHeader .container {
+    padding: 4px 20px !important;
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -140,3 +144,5 @@
     font-size: 20px;
     font-weight: 500;
 }
+
+

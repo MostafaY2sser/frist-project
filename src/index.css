@@ -8,7 +8,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Almarai", sans-serif;
+    /* font-family: "Almarai", sans-serif; */
+    font-family: "Almarai", sans-serif !important;
 }
 html{
     scroll-behavior: smooth;
@@ -40,4 +41,8 @@ ul{
     --dark-blue-color: #271C7E;
     --light-blue-color: #185FB4;
 
+}
+
+.Toastify__toast-container {
+    z-index: 9999;
 }

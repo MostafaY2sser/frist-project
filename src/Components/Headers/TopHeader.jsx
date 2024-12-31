@@ -4,9 +4,7 @@ import "./header.css"
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FormControl , MenuItem, Select } from "@mui/material";
 
-
 const TopHeader = () => {
-
 
     //  Handle Language :--------------------------
     const [ language , setLanguage] = useState('');
@@ -32,6 +30,7 @@ const TopHeader = () => {
                     inputProps={{ 'aria-label': 'Without label' }}
                     sx={{
                         fontSize:18,
+                        fontFamily: 'Almarai',
                         color:"white",
                         border: 'none',              
                         boxShadow: 'none',          
@@ -50,12 +49,12 @@ const TopHeader = () => {
                     }}
                     >
                     <MenuItem value="">
-                        <em>العربية</em>
+                        العربية
                     </MenuItem>
                     <MenuItem value={"Englash"}>Englash</MenuItem>
                     </Select>
                 </FormControl>
-                <span>:اللغة</span>
+                <span  style={{fontSize: 20}}>:اللغة</span>
                 <FontAwesomeIcon className='leftIcon' icon={faGlobe} />
             </div>
             <div className="right">
@@ -85,12 +84,12 @@ const TopHeader = () => {
                     }}
                     >
                     <MenuItem value="">
-                        <em>القاهرة,مصر</em>
+                        القاهرة,مصر
                     </MenuItem>
                     <MenuItem value={20}>الرياض,السعودية</MenuItem>
                     </Select>
                 </FormControl>
-                <span>: التوصيل</span>
+                <span style={{fontSize: 20}}>: التوصيل</span>
             </div>
             </div>
         </div>

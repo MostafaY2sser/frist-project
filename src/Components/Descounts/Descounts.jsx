@@ -1,6 +1,6 @@
-
-
-import "./Descounts.css"
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./Descounts.css";
 import best from "../../images/descounts.png";
 import more from "../../images/more.png";
 import descounts from "../../FackeAPI/ApiDescounts";
@@ -14,48 +14,48 @@ import { Rating } from "@mui/material";
 import { Store } from "../../ContextAPI";
 
 const Descounts = () => {
-
-    const navigate = useNavigate();
-    return (
-        <div className="descounts">
-            <div className="top">
-                <div onClick={() => navigate("/descountsPage")} className="more">
-                    <img src={more} alt="" />
-                    <span>رؤية المزيد</span>
-                </div>
-                <div className="title">
-                    <img src={best} alt="" />
-                    <span>تخفيضات</span>
-                </div>
-            </div>
-            <div className="products">
-                {descounts.map((item, index) => (
-                    <ProductItem  key={index} item={item} />
-                ))}
-            </div>
+  const navigate = useNavigate();
+  return (
+    <div className="descounts">
+      <div className="top">
+        <div onClick={() => navigate("/descountsPage")} className="more">
+          <img src={more} alt="" />
+          <span>رؤية المزيد</span>
         </div>
-    )
-}
-
+        <div className="title">
+          <img src={best} alt="" />
+          <span>تخفيضات</span>
+        </div>
+      </div>
+      <div className="products">
+        {descounts.map((item, index) => (
+          <ProductItem key={index} item={item} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const ProductItem = ({ item }) => {
 
     const { removeFromWishlist , addToWishlist , addToCart } = useContext(Store)
 
-    // State Of Like 
-    const [isLiked, setIsLiked] = useState(item.like);
+  // State Of Like
+  const [isLiked, setIsLiked] = useState(item.like);
 
-    // Toggle Like with Wishlist Condition
-    const toggleLike = () => {
-        if (isLiked) {
-            // Remove item From WishList
-            removeFromWishlist(item.id);
-        } else {
-            // Add item to WishList
-            addToWishlist(item);
-        }
-        setIsLiked((prevLiked) => !prevLiked);
-    };
+  // Toggle Like with Wishlist Condition
+  const toggleLike = () => {
+    if (isLiked) {
+      // Remove item From WishList
+      removeFromWishlist(item.id);
+      toast.info(`${item.name} تم إزالته من المفضلة`);
+    } else {
+      // Add item to WishList
+      addToWishlist(item);
+      toast.success(`${item.name} تم إضافته إلى المفضلة`);
+    }
+    setIsLiked((prevLiked) => !prevLiked);
+  };
 
     return (
         <div className="item">
@@ -86,20 +86,19 @@ const ProductItem = ({ item }) => {
     );
 };
 
-
 // To Delete Wrong :------------
 ProductItem.propTypes = {
-    item: PropTypes.shape({
-        img: PropTypes.string.isRequired,
-        price: PropTypes.string.isRequired,
-        name: PropTypes.string.isRequired,
-        rating: PropTypes.number.isRequired,
-        id: PropTypes.number.isRequired,
-        descount: PropTypes.number.isRequired,
-        like: PropTypes.bool.isRequired,
-        new: PropTypes.bool,
-        sall: PropTypes.bool,
-    }).isRequired,
+  item: PropTypes.shape({
+    img: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    id: PropTypes.number.isRequired,
+    descount: PropTypes.number.isRequired,
+    like: PropTypes.bool.isRequired,
+    new: PropTypes.bool,
+    sall: PropTypes.bool,
+  }).isRequired,
 };
 
-export default Descounts
+export default Descounts;

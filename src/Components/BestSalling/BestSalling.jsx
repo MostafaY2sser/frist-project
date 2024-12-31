@@ -1,4 +1,6 @@
 import "./bestSalling.css";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 import best from "../../images/best.png";
 import more from "../../images/more.png";
 import bestSelling from "../../FackeAPI/ApiBestSelling";
@@ -37,53 +39,51 @@ const BestSalling = () => {
 };
 
 const ProductItem = ({ item }) => {
+  const { addToWishlist, removeFromWishlist, addToCart } = useContext(Store);
 
-    
-    const { addToWishlist , removeFromWishlist , addToCart } = useContext(Store);
-    
-    // State Of Like
-    const [isLiked, setIsLiked] = useState(item.like);
+  // State Of Like
+  const [isLiked, setIsLiked] = useState(item.like);
 
-    // Toggle Like with Wishlist Condition
-    const toggleLike = () => {
-        if (isLiked) {
-            // Remove item From WishList
-            removeFromWishlist(item.id);
-        } else {
-            // Add item to WishList
-            addToWishlist(item);
-        }
-        setIsLiked((prevLiked) => !prevLiked);
-    };
+  // Toggle Like with Wishlist Condition
+  const toggleLike = () => {
+    if (isLiked) {
+      // Remove item From WishList
+      removeFromWishlist(item.id);
+      toast.info(`${item.name} تم إزالته من المفضلة`);
+    } else {
+      // Add item to WishList
+      addToWishlist(item);
+      toast.success(`${item.name} تم إضافته إلى المفضلة`);
+    }
+    setIsLiked((prevLiked) => !prevLiked);
+  };
 
-
-    return (
-        <div className="item">
-            <img className="productImage" src={item.img} alt="product image" />
-            <div className="info">
-                <span>{`${item.price} ج`}</span>
-                <span>{item.name}</span>
-            </div>
-            <div className="rating">
-                <span className="rate">{`${item.rating}.0`}</span>
-                <Rating name="read-only" value={item.rating} readOnly />
-            </div>
-            <div className="addCart" onClick={()=> addToCart(item)}>
-                <img src={cart} alt="shopping cart" />
-                <span>اضف الي العربة</span>
-            </div>
-            {item.new ? <span className="newOk">جديد</span> : null}
-            {item.sall ? <span className="sallOk">20% تخفيض</span> : null}
-            <img
-                className="iconHeart"
-                src={isLiked ? likeOk : likeNo}
-                alt={isLiked ? "like" : "dislike"}
-                onClick={toggleLike}
-            />
-        </div>
-    );
+  return (
+    <div className="item">
+      <img className="productImage" src={item.img} alt="product image" />
+      <div className="info">
+        <span>{`${item.price} ج`}</span>
+        <span>{item.name}</span>
+      </div>
+      <div className="rating">
+        <span className="rate">{`${item.rating}.0`}</span>
+        <Rating name="read-only" value={item.rating} readOnly />
+      </div>
+      <div className="addCart" onClick={() => addToCart(item)}>
+        <img src={cart} alt="shopping cart" />
+        <span>اضف الي العربة</span>
+      </div>
+      {item.new ? <span className="newOk">جديد</span> : null}
+      {item.sall ? <span className="sallOk">20% تخفيض</span> : null}
+      <img
+        className="iconHeart"
+        src={isLiked ? likeOk : likeNo}
+        alt={isLiked ? "like" : "dislike"}
+        onClick={toggleLike}
+      />
+    </div>
+  );
 };
-
 
 // Delete Wrong :------------
 ProductItem.propTypes = {

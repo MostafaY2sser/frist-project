@@ -34,6 +34,7 @@ const StoreProvider = ({ children }) => {
     const removeFromWishlist = (itemId) => {
         setWishListItem((prevWishlist) => {
             const updatedWishlist = prevWishlist.filter(item => item.id !== itemId);
+            
             // Save updated wishlist to localStorage
             localStorage.setItem('wishlist', JSON.stringify(updatedWishlist));
             return updatedWishlist;
