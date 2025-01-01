@@ -1,101 +1,241 @@
+.help {
+  width: 100%;
+  height: 100%;
+}
 
-.help{
-    width: 100%;
-    height: 100%;
+.helpContainer {
+  max-width: 1440px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 30px;
+  margin: 0 auto;
 }
-.helpContainer{
-    max-width: 1440px;
-    padding: 20px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 50px;
-    gap: 30px;
+
+.help h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--main-color);
+  text-align: center;
 }
-.help h3{
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--main-color);
+
+.help .contact {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.help .contact{
-    display: flex;
-    align-items: center;
-    gap: 50px;
+
+.help .contact div {
+  background: linear-gradient(
+    to bottom,
+    #ff9900e6 50%,
+    rgba(211, 211, 211, 0.582)
+  );
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
 }
-.help .contact div{
-    background: linear-gradient(to bottom , #ff9900e6 50%, rgba(211, 211, 211, 0.582));
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    cursor: pointer;
+
+.help .activeBorder {
+  border: 7px solid #11d200;
 }
-.help .activeBorder{
-    border: 7px solid #11D200;
+
+.help .contact span {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
 }
-.help .contact span{
-    font-size: 24px;
-    font-weight: 700;
+
+.help .contactPhone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
-.help .contactPhone{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+
+.help .contactPhone .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 300px;
+  max-width: 100%;
 }
-.help .contactPhone .number{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.help .number span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.help p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333a2;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.help .contactMessage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.help textarea {
+  width: 100%;
+  max-width: 600px;
+  min-height: 200px;
+  background-color: #eee;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.help .contactMessage button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px 0;
+  width: 250px;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .helpContainer {
+    padding-top: 30px;
     gap: 20px;
-    outline: none;
-    cursor: pointer;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px 0 ;
-    width: 300px;
-}
-.help .number span{
-    font-size: 32px;
-    font-weight: 700;
-}
-.help p{
-    font-size: 16px;
-    font-weight: 400;
-    color: #333333a2;
-    margin-top: 15px;
-}
-.help .contactMessage{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.help textarea{
-    min-width: 500px;
-    max-width: 600px;
-    min-height: 200px;
-    background-color: #eee;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    font-size : 18px;
-}
-.help .contactMessage button{
-    background-color: var(--main-color);
-    color: white;
-    padding: 15px 0;
-    width: 250px;
-    text-align: center;
-    margin-top: 30px;
-    border: none;
-    outline: none;
-    border-radius: 6px;
+  }
+
+  .help h3 {
+    font-size: 24px;
+  }
+
+  .help .contact {
+    gap: 30px;
+  }
+
+  .help .contact div {
+    width: 150px;
+    height: 150px;
+  }
+
+  .help .contact span {
     font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
+  }
+
+  .help .number span {
+    font-size: 24px;
+  }
+
+  .help textarea {
+    min-width: unset;
+  }
+  .help .about-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .helpContainer {
+    padding: 15px;
+    padding-top: 20px;
+  }
+
+  .help h3 {
+    font-size: 20px;
+  }
+
+  .help .contact {
+    gap: 20px;
+  }
+
+  .help .contact div {
+    width: 120px;
+    height: 120px;
+  }
+
+  .help .contact span {
+    font-size: 16px;
+  }
+
+  .help .number span {
+    font-size: 20px;
+  }
+
+  .help p {
+    font-size: 14px;
+  }
+
+  .help textarea {
+    font-size: 16px;
+  }
+
+  .help .contactMessage button {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+  .help .about-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .help .contact div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .help .about-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.help img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .help img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .help img {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 320px) {
+  .help img {
+    max-width: 50%;
+  }
 }
