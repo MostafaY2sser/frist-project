@@ -3,7 +3,7 @@
   height: 100%;
   padding: 0 20px;
   margin-top: 50px;
-  margin-bottom: 85px;
+  margin-bottom: 102px;
 }
 
 .talapatyContainer {
@@ -21,19 +21,21 @@
   margin: 20px 0px;
 }
 
-nav {
+.talapaty nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-ul {
+.talapaty ul {
   list-style: none;
   display: flex;
   gap: 30px;
   padding: 0;
   margin: 0;
   direction: rtl;
+  display: flex;
+  flex-direction: row;
 }
 
 li {
