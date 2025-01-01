@@ -2,11 +2,11 @@ import user from "../../images/profilePage/Group 561.png";
 import img1 from "../../images/profilePage/SVGRepo_iconCarrier (2).png";
 import img2 from "../../images/profilePage/SVGRepo_iconCarrier (3).png";
 import img3 from "../../images/profilePage/SVGRepo_iconCarrier (4).png";
-import img4 from '../../images/profilePage/Frame.png'
-import img5 from '../../images/profilePage/SVGRepo_iconCarrier (5).png'
-import img6 from '../../images/profilePage/Capa_1.png'
+import img4 from "../../images/profilePage/Frame.png";
+import img5 from "../../images/profilePage/SVGRepo_iconCarrier (5).png";
+import img6 from "../../images/profilePage/Capa_1.png";
 import "./profile.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
@@ -16,7 +16,7 @@ const Profile = () => {
           <img src={user} alt="user" />
         </div>
         <div className="aria">
-          <Link to='/ProfileInfo' className="section">
+          <Link to="/ProfileInfo" className="section">
             <div>
               <img src={img1} alt="img1" />
             </div>
@@ -35,7 +35,7 @@ const Profile = () => {
             </div>
           </Link>
           <Link to="/Talapaty" className="section">
-          <div>
+            <div>
               <img src={img3} alt="img1" />
             </div>
             <div className="text">
@@ -44,7 +44,7 @@ const Profile = () => {
             </div>
           </Link>
           <div className="section">
-          <div>
+            <div>
               <img src={img4} alt="img1" />
             </div>
             <div className="text">
@@ -53,7 +53,7 @@ const Profile = () => {
             </div>
           </div>
           <Link to="/Massage" className="section">
-          <div>
+            <div>
               <img src={img5} alt="img1" />
             </div>
             <div className="text">
@@ -62,7 +62,7 @@ const Profile = () => {
             </div>
           </Link>
           <div className="section">
-          <div>
+            <div>
               <img src={img6} alt="img1" />
             </div>
             <div className="text">

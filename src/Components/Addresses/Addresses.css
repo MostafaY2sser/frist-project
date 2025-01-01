@@ -3,23 +3,23 @@
   height: 100%;
   padding: 0 20px;
   margin-top: 50px;
-  margin-bottom: 122px;
+  margin-bottom: 142px;
 }
+
 .AddressesPage {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .AddressesPage img {
   max-width: 220px;
   margin: 5px 20px;
 }
 
 /* address-container */
-
 .address-container {
   width: 100%;
   max-width: 800px;
-  margin: 20px;
   padding: 10px 0;
   box-sizing: border-box;
 }
@@ -77,17 +77,6 @@
 
 .add-address-link:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .address-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .address-actions {
-    margin-top: 10px;
-  }
 }
 
 .overlay {
@@ -172,145 +161,63 @@
   list-style: none;
 }
 
-/* General responsive adjustments */
-@media (max-width: 1200px) {
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .Addresses {
-    padding: 0 15px; /* Reduce padding on large screens */
-  }
-
-  .AddressesPage {
-    padding: 0 10px; /* Adjust padding for medium screens */
+    padding: 0 15px; /* Reduce padding for medium screens */
   }
 
   .address-container {
-    width: 90%; /* Make address container more flexible */
-  }
-}
-
-@media (max-width: 992px) {
-  .Addresses {
-    padding: 0 15px; /* Slight padding reduction for medium screens */
-  }
-
-  .AddressesPage img {
-    max-width: 180px; /* Reduce image size for medium screens */
-    margin: 5px; /* Adjust margin */
-  }
-
-  .address-container {
-    width: 95%; /* Address container is more flexible */
-  }
-
-  .address-item {
-    padding: 15px; /* Add some extra padding to items */
+    max-width: 90%; /* Allow address container to take more width */
+    margin: 10px auto; /* Center the address container */
   }
 }
 
 @media (max-width: 768px) {
   .Addresses {
-    padding: 0 10px; /* Reduce padding for tablets */
-  }
-
-  .AddressesPage img {
-    max-width: 150px; /* Reduce image size on tablets */
-    margin: 5px 10px; /* Adjust margin */
+    padding: 0 10px; /* Further reduce padding for smaller screens */
   }
 
   .address-container {
-    width: 100%; /* Full width for container */
-    padding: 10px 0; /* Ensure enough spacing */
+    max-width: 100%; /* Allow address container to take full width */
   }
 
   .address-item {
-    padding: 12px; /* Reduced padding for mobile */
-  }
-
-  .address-actions {
-    gap: 8px; /* Adjust gap between buttons */
-  }
-}
-
-@media (max-width: 600px) {
-  .Addresses {
-    padding: 0 5px; /* Minimal padding for small screens */
-  }
-
-  .AddressesPage img {
-    max-width: 120px; /* Significantly reduce image size for small screens */
-    margin: 5px 10px; /* Adjust margins for smaller screens */
-  }
-
-  .address-container {
-    padding: 10px 0; /* Adjust padding for small screens */
-  }
-
-  .address-item {
-    flex-direction: column; /* Stack address items vertically */
-    align-items: flex-start; /* Align to the left for mobile screens */
-    padding: 10px; /* Reduced padding for mobile */
-  }
-
-  .address-actions {
-    margin-top: 10px; /* Add margin between actions */
+    padding: 15px; /* Increase padding for better touch targets */
   }
 
   .address-info {
-    font-size: 12px; /* Adjust font size for mobile */
+    font-size: 16px; /* Increase font size for better readability */
   }
 
   .edit-btn,
   .delete-btn {
-    font-size: 16px; /* Adjust button font size */
-    padding: 4px;
-  }
-
-  .add-new-address {
-    text-align: center; /* Center align the 'add new address' */
-    margin-top: 10px;
-  }
-
-  .add-address-link {
-    font-size: 14px; /* Adjust font size for mobile */
-  }
-
-  .modal {
-    width: 90%; /* Modal should take up more space */
-    padding: 15px; /* Adjust padding for small screens */
-  }
-
-  .address-form input {
-    font-size: 12px; /* Smaller input font size */
-    padding: 8px; /* Reduced padding for small screens */
-  }
-
-  .submit-button {
-    padding: 8px; /* Reduced padding for small screens */
-    font-size: 14px; /* Smaller button font */
+    font-size: 16px; /* Adjust button font size for mobile */
   }
 }
 
-@media (max-width: 480px) {
-  .address-item {
-    padding: 8px; /* Reduce padding for very small screens */
+@media (max-width: 576px) {
+  .Addresses {
+    margin-bottom: 80px; /* Adjust bottom margin for smaller screens */
   }
 
-  .edit-btn,
-  .delete-btn {
-    font-size: 14px; /* Smaller button text */
+  .address-item {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .address-info {
+    font-size: 14px; /* Maintain font size for consistency */
+  }
+
+  .add-new-address {
+    text-align: center; /* Center align the add new address link */
   }
 
   .modal {
-    width: 100%; /* Full-width modal for small screens */
-    padding: 10px; /* Padding reduction */
+    padding: 15px; /* Reduce padding in modal for smaller screens */
   }
 
   .submit-button {
-    font-size: 12px; /* Further reduce font size */
-    padding: 8px; /* Smaller padding */
-  }
-
-  .address-form input {
-    font-size: 10px; /* Smaller font size for inputs */
-    padding: 6px; /* Reduce input padding */
+    padding: 8px; /* Adjust button padding for smaller screens */
   }
 }
