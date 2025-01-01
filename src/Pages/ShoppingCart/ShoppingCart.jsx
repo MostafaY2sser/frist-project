@@ -59,7 +59,7 @@ const ShoppingCart = () => {
                                         <span>{item.name}</span>
                                     </div>
                                     <div className="description">
-                                        <div> <span className="size">M</span> :المقاس</div>
+                                        <div className="sizeCont"> <span className="size">M</span> :المقاس</div>
                                         <div> <span className="color" style={{background:"red"}}></span> :اللون</div>
                                     </div>
                                 </div>
