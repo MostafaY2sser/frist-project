@@ -1,60 +1,170 @@
+.sliderCategory {
+  margin-top: 150px;
+  position: relative;
+}
 
-.sliderCategory{
-    margin-top: 150px;
-    position: relative;
+.sliderCategory .title {
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 700;
+  border: 2px solid var(--main-color);
+  width: 200px;
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  right: 0;
 }
-.sliderCategory .title{
-    color: var(--main-color);
-    font-size: 24px;
-    font-weight: 700;
-    border: 2px solid var(--main-color);
-    width: 200px;
-    text-align: center;
-    padding: 20px 30px;
-    border-radius: 50%;
-    position: absolute;
-    top: -100px;
-    right: 0;
+
+.sliderCategory .content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1440px;
+  overflow-x: scroll;
+  padding-bottom: 10px;
 }
-.sliderCategory .content{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: 1440px;
-    overflow-x: scroll;
-} 
+
 .sliderCategory .content::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-.sliderCategory .content .item{
-    width: 220px;
-    height: 230px;
-    padding: 10px;
-    background-color: #eee;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+
+.sliderCategory .content .item {
+  width: 220px;
+  height: 230px;
+  padding: 20px;
+  background-color: #eee;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
-.sliderCategory .item span{
-    color: var(--main-color);
+
+.sliderCategory .item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sliderCategory .item span {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sliderCategory .arrow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  transform: translateX(-50%);
+}
+
+.sliderCategory .arrwoIcon {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  color: var(--white-color);
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .sliderCategory .content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .sliderCategory .title {
     font-size: 20px;
-    font-weight: 400;
+    width: 180px;
+    padding: 15px 25px;
+  }
+
+  .sliderCategory .content .item {
+    width: 200px;
+    height: 210px;
+  }
+
+  .sliderCategory .item span {
+    font-size: 18px;
+  }
 }
-.sliderCategory .arrow{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    position: absolute;
-    left: 50%;
-    bottom: -50px;
-    transform: translateX(-50px);
+
+@media (max-width: 768px) {
+  .sliderCategory {
+    margin-top: 120px;
+  }
+
+  .sliderCategory .title {
+    font-size: 18px;
+    width: 160px;
+    padding: 12px 20px;
+    top: -80px;
+  }
+
+  .sliderCategory .content .item {
+    width: 180px;
+    height: 190px;
+  }
+
+  .sliderCategory .item span {
+    font-size: 16px;
+  }
+
+  .sliderCategory .item img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .sliderCategory .arrow {
+    bottom: -40px;
+  }
+
+  .sliderCategory .arrwoIcon {
+    padding: 8px;
+  }
 }
-.sliderCategory .arrwoIcon{
-    background-color: var(--main-color);
-    border-radius: 50%;
-    color: var(--white-color);
-    padding: 10px;
-    cursor: pointer;
-} 
+
+@media (max-width: 576px) {
+  .sliderCategory {
+    margin-top: 100px;
+  }
+
+  .sliderCategory .title {
+    font-size: 16px;
+    width: 140px;
+    padding: 10px 15px;
+    top: -70px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .sliderCategory .content {
+    gap: 15px;
+  }
+
+  .sliderCategory .content .item {
+    width: 160px;
+    height: 170px;
+  }
+
+  .sliderCategory .item span {
+    font-size: 14px;
+  }
+
+  .sliderCategory .item img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .sliderCategory .arrow {
+    display: none; /* Hide arrows on mobile screens */
+  }
+}
