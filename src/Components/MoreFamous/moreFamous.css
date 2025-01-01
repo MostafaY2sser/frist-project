@@ -172,7 +172,7 @@
 @media (max-width: 576px) {
   .famous .top .title {
     width: 150px; /* Adjust title width for mobile */
-    font-size: 20px; /* Adjust font size for mobile */
+    font-size: 16px; /* Adjust font size for mobile */
   }
 
   .famous .top .more span {

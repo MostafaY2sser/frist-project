@@ -12,7 +12,7 @@ const Selling = () => {
         <div className="selling">
             <div className="images">
                 <img src={onePerson} alt="" />
-                <img src={fiftyPercentage} alt="" />
+                <img src={fiftyPercentage} className="fifty" alt="" />
                 <div className="group">
                     <img src={twoPerson} alt="" />
                     <img className="text" src={bestSelling} alt="" />
