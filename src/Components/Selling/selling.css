@@ -70,12 +70,12 @@
   }
 
   .selling .images .bottom {
-    top: -700px;
-    left: 180px;
+    top: -570px;
+    left: 150px;
   }
   .selling .images .top {
     padding: 5px 20px;
-    top: -620px;
+    top: -500px;
   }
 }
 
@@ -95,7 +95,12 @@
   .selling {
     margin-top: 40px;
   }
-
+  .selling .group img {
+    width: 100%;
+  }
+  .selling .fifty {
+    width: 100%;
+  }
   .selling .images .group .text {
     font-size: 18px;
     padding: 7px 15px;

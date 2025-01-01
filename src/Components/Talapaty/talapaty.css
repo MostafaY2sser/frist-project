@@ -1,19 +1,21 @@
 .talapaty {
   width: 100%;
-  height :100%;
+  height: 100%;
   padding: 0 20px;
   margin-top: 50px;
+  margin-bottom: 85px;
 }
-.talapatyContainer{
-  max-width :1440px;
-  margin : 0 auto
+
+.talapatyContainer {
+  max-width: 1440px;
+  margin: 0 auto;
 }
-.talapatyContainer img{
+
+.talapatyContainer img {
   max-width: 200px;
 }
 
 /* navigation */
-
 .navigation-bar {
   border-bottom: 1px solid #ccc;
   margin: 20px 0px;
@@ -28,7 +30,7 @@ nav {
 ul {
   list-style: none;
   display: flex;
-  gap: 30px; 
+  gap: 30px;
   padding: 0;
   margin: 0;
   direction: rtl;
@@ -44,15 +46,15 @@ li {
 
 li.active {
   color: purple;
-  border-bottom: 2px solid purple; 
+  border-bottom: 2px solid purple;
 }
 
 li:hover {
-  color: purple; 
+  color: purple;
 }
 
 li::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -67,9 +69,7 @@ li:hover::after {
   transform: scaleX(1);
 }
 
-
 /* searchbar */
-
 .search-bar {
   display: flex;
   align-items: center;
@@ -77,7 +77,7 @@ li:hover::after {
   padding: 10px;
   border-radius: 5px;
   gap: 10px;
-  direction: rtl; 
+  direction: rtl;
 }
 
 .search-input {
@@ -96,7 +96,7 @@ li:hover::after {
 
 .search-button {
   padding: 10px 20px;
-  background-color: #6918B4;
+  background-color: #6918b4;
   color: white;
   border: none;
   border-radius: 5px;
@@ -104,7 +104,6 @@ li:hover::after {
 }
 
 /* tabel */
-
 .orders-table {
   margin: 20px 0px;
   overflow-x: auto;
@@ -117,7 +116,8 @@ table {
   direction: rtl; /* لدعم اللغة العربية */
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ddd;
   padding: 12px;
 }
@@ -134,4 +134,73 @@ td {
 .status-paid {
   color: green;
   font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .talapaty {
+    padding: 0 15px; /* Reduce padding for medium screens */
+  }
+
+  ul {
+    gap: 20px; /* Reduce gap between navigation items */
+  }
+
+  .search-bar {
+    padding: 8px; /* Reduce padding in search bar */
+  }
+
+  .search-input,
+  .dropdown {
+    padding: 6px; /* Reduce padding in input fields */
+  }
+
+  .search-button {
+    padding: 8px 15px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .talapaty {
+    padding: 0 10px; /* Further reduce padding for smaller screens */
+  }
+
+  .talapaty ul {
+    font-size: 13px;
+  }
+
+  .search-bar {
+    flex-direction: column; /* Stack search bar elements vertically */
+    gap: 5px; /* Reduce gap between elements */
+  }
+
+  .search-input,
+  .dropdown {
+    width: 100%; /* Full width for input fields */
+  }
+
+  .search-button {
+    width: 100%; /* Full width for button */
+  }
+}
+
+@media (max-width: 576px) {
+  .talapaty {
+    margin-bottom: 50px; /* Adjust bottom margin for smaller screens */
+  }
+
+  .talapaty ul {
+    font-size: 8px;
+    gap: 15px;
+  }
+
+  th,
+  td {
+    padding: 10px; /* Reduce padding in table cells */
+    font-size: 9.5px;
+  }
+
+  .orders-table {
+    margin: 10px 0; /* Reduce margin for smaller screens */
+  }
 }

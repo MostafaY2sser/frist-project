@@ -1,98 +1,149 @@
 .ProfileInfo {
-    width: 100%;
-    height :100%;
-    padding: 0 20px;
-    margin-top: 50px;
-}
-.ProfileInfoContainer{
-    max-width :1440px;
-    margin : 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-.ProfileInfoContainer div{
-    text-align: center;
-    width: 100%;
-}
-.ProfileInfoContainer div img{
-    text-align: center;
-    max-width: 200px;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  margin-top: 50px;
 }
 
-/* form */
+.ProfileInfoContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ProfileInfoContainer div {
+  text-align: center;
+  width: 100%;
+}
+
+.ProfileInfoContainer div img {
+  text-align: center;
+  max-width: 200px;
+}
+
+/* Form */
 .form-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button.delete-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .ProfileInfoContainer {
+    padding: 0 10px; /* Reduce padding for medium screens */
   }
-  
-  .profile-image {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+
+  .form-container {
+    max-width: 90%; /* Allow form to take more width on smaller screens */
   }
-  
+}
+
+@media (max-width: 768px) {
+  .ProfileInfoContainer {
+    padding: 0 5px; /* Further reduce padding for smaller screens */
+  }
+
+  .form-container {
+    max-width: 100%; /* Full width for mobile */
+  }
+
   .profile-image img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 80px; /* Reduce profile image size for mobile */
+    height: 80px; /* Maintain aspect ratio */
   }
-  
-  .input-group {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
+
+  button.submit-btn,
+  button.delete-btn {
+    padding: 8px; /* Adjust button padding for smaller screens */
   }
-  
+}
+
+@media (max-width: 576px) {
+  .ProfileInfoContainer {
+    gap: 0.5rem; /* Reduce gap between elements */
+  }
+
   input[type="text"],
   input[type="email"],
   input[type="tel"],
   input[type="date"],
   input[type="password"],
   select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 8px; /* Adjust input padding for mobile */
   }
-  
-  .radio-group {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 15px;
+
+  .input-group {
+    flex-direction: column; /* Stack input groups vertically */
   }
-  
-  .radio-group label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  button.submit-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  button.delete-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+}

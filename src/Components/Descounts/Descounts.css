@@ -157,6 +157,7 @@
 
   .descounts .top .title {
     font-size: 20px; /* Adjust font size */
+    width: 150px;
   }
 
   .descounts .products .item {

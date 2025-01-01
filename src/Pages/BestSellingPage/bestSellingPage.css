@@ -1,107 +1,144 @@
 .bestSellingPage {
-    width: 100%;
-    height :100%;
-    padding: 0 20px;
-    margin-top: 50px;
-}
-.bestSellingContainer{
-    max-width :1440px;
-    margin : 0 auto
-}
-.bestSellingPage  .products{
-    margin-top: 70px;
-}
-.bestSellingPage  .products{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-.bestSellingPage  .products .item{
-    width: 19%;
-    padding: 20px;
-    background-color: #eee;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-    margin-top: 20px;
-}
-.bestSellingPage  .products .item .productImage{
-    width: 100%;
-}
-.bestSellingPage  .products .item .info{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.bestSellingPage  .products .item .info span{
-    font-size: 18px;
-    font-weight: 700;
-}
-.bestSellingPage  .products .item .info span:first-child{
-    color: var(--main-yellow-color) ;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  margin-top: 50px;
 }
 
-.bestSellingPage  .products .item .rating{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 10px;
+.bestSellingContainer {
+  max-width: 1440px;
+  margin: 0 auto;
 }
-.bestSellingPage  .products .item .rating .rate{
-    color: #333333ba;
+
+.bestSellingPage .products {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.bestSellingPage  .products .item .addCart{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px 0;
-    background-color: var(--main-color);
-    color: var(--white-color);
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
+
+.bestSellingPage .products .item {
+  width: 19%;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 20px;
 }
-.bestSellingPage  .products .item .addCart img{
-    width: 22px;
-    height: 22px;
+
+.bestSellingPage .products .item .productImage {
+  width: 100%;
 }
-.bestSellingPage  .products .item .newOk{
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    background-color: #11D200;
-    color: var(--white-color);
-    padding: 7px 15px;
-    border-radius: 5px ;
-    font-size: 20px;
+
+.bestSellingPage .products .item .info {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.bestSellingPage  .products .item .sallOk{
-    position: absolute;
-    left: 20px;
-    top: 80px;
-    background-color: var(--main-yellow-color);
-    color: var(--white-color);
-    padding: 7px 20px;
-    border-radius: 5px ;
-    font-size: 20px;
+
+.bestSellingPage .products .item .info span {
+  font-size: 18px;
+  font-weight: 700;
 }
-.bestSellingPage  .products .item  .iconHeart{
-    position: absolute;
-    top: 30px;
-    right: 30px ;
-    font-size: 25px;
-    cursor: pointer;
+
+.bestSellingPage .products .item .info span:first-child {
+  color: var(--main-yellow-color);
 }
-.bestSellingPage  .products .item .likeOk{
-    color: var(--main-yellow-color);
+
+.bestSellingPage .products .item .rating {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
 }
-.bestSellingPage  .products .item .likeNo{
-    color: transparent;
+
+.bestSellingPage .products .item .rating .rate {
+  color: #333333ba;
+}
+
+.bestSellingPage .products .item .addCart {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.bestSellingPage .products .item .addCart img {
+  width: 22px;
+  height: 22px;
+}
+
+.bestSellingPage .products .item .newOk {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  background-color: #11d200;
+  color: var(--white-color);
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.bestSellingPage .products .item .sallOk {
+  position: absolute;
+  left: 20px;
+  top: 80px;
+  background-color: var(--main-yellow-color);
+  color: var(--white-color);
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.bestSellingPage .products .item .iconHeart {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 25px;
+}
+
+.bestSellingPage .products .item .likeOk {
+  color: var(--main-yellow-color);
+}
+
+.bestSellingPage .products .item .likeNo {
+  color: transparent;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .bestSellingPage .products .item {
+    width: 23%; /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .bestSellingPage .products .item {
+    width: 30%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .bestSellingPage .products .item {
+    width: 45%; /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .bestSellingPage .products .item {
+    width: 100%; /* Full width for mobile */
+    margin-top: 10px; /* Reduce margin for mobile */
+  }
 }
