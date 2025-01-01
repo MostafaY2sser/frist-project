@@ -294,6 +294,7 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
+  justify-content: center;
   gap: 50px;
 }
 
